@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(60, 88, 88);
+        }
+
+        .nabsection {
+            width: 100%;
+            height: 10vh;
+            background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40%;
+            color: #fff;
+            background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: aagepiche 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes aagepiche {
+            from {
+                padding-left: 40px;
+            }
+
+            to {
+                padding-right: 40px;
+            }
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 800;
+            font-size: 17px;
+            position: relative;
+        }
+
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-bottom: 2px solid #07080a;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        .box {
+            width: 80%;
+            height: 550px;
+            border-radius: 5%;
+            background-color: cadetblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            text-align: center;
+            font-size: 28px;
+            padding: 30px 10px 10px 10px;
+        }
+
+        .h1 {
+            width: 100%;
+            height: 50PX;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nabsection">
+        <div class="logo">
+            <h1>Thapa technical</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contant.html">contact</a>
+        </nav>
+    </section>
+    <h1 class="h1">WP Website Design</h1>
+    <div class="box">
+        WordPress website design is a multifaceted process that involves creating a visually appealing and functional
+        website using the WordPress platform. WordPress is a versatile content management system (CMS) that offers a
+        wide range of themes and plugins, making it a popular choice for building websites of all types. To design a
+        WordPress website effectively, you need to start by defining your website's goals and purpose. Are you creating
+        a blog, an online store, a portfolio, or a business website? Your goals will influence the design and features
+        you implement.
+
+        Selecting the right domain name and web hosting provider is crucial, as it sets the foundation for your site.
+        Once WordPress is installed, you can choose a theme that aligns with your brand or website's aesthetics.
+        Customizing the theme involves configuring colors, fonts, layouts, and adding your logo and favicon.
+        Additionally, you'll need to install essential plugins to enhance functionality, optimize for search engines,
+        and improve security.
+
+        Content creation is a vital part of the process, and you'll want to ensure your pages and posts are
+        well-structured, engaging, and include high-quality media. Search engine optimization (SEO) should also be a
+        priority, as it helps your site rank well in search engine results.
+
+        Designing your navigation menus and configuring widgets and sidebars further enhance your site's usability and
+        user experience. Regularly testing your website's responsiveness and implementing security measures are
+        essential for maintaining its integrity and performance. Finally, launching your website is just the beginning;
+        ongoing monitoring and maintenance are necessary to keep your WordPress site running smoothly and adapting to
+        evolving needs</div>
+</body>
+
+</html>

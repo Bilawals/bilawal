@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(60, 88, 88);
+        }
+
+        .nabsection {
+            width: 100%;
+            height: 10vh;
+            background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40%;
+            color: #fff;
+            background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: aagepiche 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes aagepiche {
+            from {
+                padding-left: 40px;
+            }
+
+            to {
+                padding-right: 40px;
+            }
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 800;
+            font-size: 17px;
+            position: relative;
+        }
+
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-bottom: 2px solid #07080a;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        .box {
+            width: 80%;
+            height: 550px;
+            border-radius: 5%;
+            background-color: cadetblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            text-align: center;
+            font-size: 28px;
+            padding: 30px 10px 10px 10px;
+        }
+
+        .h1 {
+            width: 100%;
+            height: 50PX;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nabsection">
+        <div class="logo">
+            <h1>Thapa technical</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contant.html">contact</a>
+        </nav>
+    </section>
+    <h1 class="h1">Ecommerce</h1>
+    <div class="box">
+
+        E-commerce, short for electronic commerce, has transformed the way businesses operate and consumers shop. It
+        refers to the buying and selling of goods and services over the internet. E-commerce has grown exponentially in
+        recent years, reshaping traditional retail and opening up new opportunities for entrepreneurs and established
+        businesses alike.
+
+        One of the key advantages of e-commerce is its convenience. Consumers can shop from the comfort of their homes
+        or virtually anywhere, 24/7, which has led to a significant shift in consumer behavior. This convenience factor
+        is not limited to buyers; e-commerce businesses can operate with lower overhead costs compared to
+        brick-and-mortar stores, making it an attractive option for startups and small businesses.
+
+        Moreover, e-commerce offers a global reach. With an online presence, businesses can tap into a worldwide
+        customer base, expanding their market far beyond their physical location. This global accessibility has the
+        potential to boost sales and increase brand exposure.
+
+        However, the e-commerce landscape is highly competitive, requiring businesses to invest in user-friendly
+        websites, robust security measures, and effective digital marketing strategies to stand out and gain the trust
+        of online shoppers. Additionally, the logistics of managing inventory, shipping, and customer support in an
+        online environment present unique challenges that need to be carefully addressed.
+
+        In summary, e-commerce has revolutionized the way business is conducted, offering convenience, global reach, and
+        growth potential. While it presents opportunities, it also demands careful planning and execution to succeed in
+        the increasingly crowded digital marketplace. As technology continues to advance, e-commerce is likely to remain
+        a dynamic and influential force in the business world.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(60, 88, 88);
+        }
+
+        .nabsection {
+            width: 100%;
+            height: 10vh;
+            background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40%;
+            color: #fff;
+            background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: aagepiche 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes aagepiche {
+            from {
+                padding-left: 40px;
+            }
+
+            to {
+                padding-right: 40px;
+            }
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 800;
+            font-size: 17px;
+            position: relative;
+        }
+
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-bottom: 2px solid #07080a;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        .box {
+            width: 80%;
+            height: 550px;
+            border-radius: 5%;
+            background-color: cadetblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            text-align: center;
+            font-size: 30px;
+            padding: 30px 10px 10px 10px;
+        }
+
+        .h1 {
+            width: 100%;
+            height: 50PX;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nabsection">
+        <div class="logo">
+            <h1>Thapa technical</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contant.html">contact</a>
+        </nav>
+    </section>
+    <h1 class="h1">Branding</h1>
+    <div class="box">
+
+        Branding is more than just a logo or a catchy slogan; it's the essence of a company or product that leaves a
+        lasting impression on its audience. Effective branding goes beyond aesthetics; it encompasses the emotional and
+        psychological connection that consumers have with a brand. A well-crafted brand strategy defines a company's
+        values, personality, and unique selling proposition, which, when consistently communicated, can build trust and
+        loyalty among customers.
+
+        A strong brand not only distinguishes a product or service from competitors but also conveys a promise of
+        quality and reliability. It evokes specific emotions and associations that resonate with the target audience.
+        Brands with a clear and compelling identity can command higher prices, enjoy customer loyalty, and even
+        influence consumer behavior.
+
+        Building a successful brand takes time and effort. It involves understanding the target market, crafting a
+        compelling brand story, and ensuring that every touchpoint, from the website to customer interactions, reflects
+        the brand's values and personality. Consistency in messaging and design is key to reinforcing brand recognition
+        and trust.
+
+        In today's competitive marketplace, a well-defined and well-managed brand is a valuable asset that can drive
+        customer preference and business success. It's a powerful tool for conveying the essence of a company or product
+        and fostering a meaningful connection with customers that extends beyond the transactional.
+    </div>
+</body>
+
+</html>

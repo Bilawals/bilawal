@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(60, 88, 88);
+        }
+
+        .nabsection {
+            width: 100%;
+            height: 10vh;
+            background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40%;
+            color: #fff;
+            background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: aagepiche 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes aagepiche {
+            from {
+                padding-left: 40px;
+            }
+
+            to {
+                padding-right: 40px;
+            }
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 800;
+            font-size: 17px;
+            position: relative;
+        }
+
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-bottom: 2px solid #07080a;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        .box {
+            width: 80%;
+            height: 550px;
+            border-radius: 5%;
+            background-color: cadetblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            text-align: center;
+            font-size: 28px;
+            padding: 30px 10px 10px 10px;
+        }
+
+        .h1 {
+            width: 100%;
+            height: 50PX;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nabsection">
+        <div class="logo">
+            <h1>Thapa technical</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contant.html">contact</a>
+        </nav>
+    </section>
+    <h1 class="h1">Development</h1>
+    <div class="box">
+
+        1 / 2
+
+        Development, in a broad sense, refers to the process of growth, progress, and positive change in various aspects
+        of human life, society, and the economy. It encompasses a wide range of areas, including economic development,
+        social development, and personal development, all of which contribute to improving the overall quality of life
+        for individuals and communities.
+
+        Economic development is a crucial facet of development. It involves increasing the wealth and well-being of a
+        region or nation by fostering economic growth, reducing poverty, and improving standards of living. This can be
+        achieved through initiatives such as infrastructure development, job creation, and investment in education and
+        healthcare.
+
+        Social development focuses on enhancing the quality of life for individuals and communities. It encompasses
+        areas like access to education, healthcare, and social services, as well as the promotion of social justice,
+        equality, and inclusion. Social development efforts aim to improve the overall well-being and opportunities
+        available to people, with a focus on vulnerable and marginalized populations.
+
+        Personal development is an individual's pursuit of self-improvement and growth. It involves acquiring new
+        skills, knowledge, and experiences that enhance one's personal and professional life. Personal development can
+        encompass areas such as self-awareness, goal setting, communication skills, and lifelong learning.
+
+        Sustainable development is a widely recognized concept that emphasizes the need to balance economic growth with
+        environmental protection and social equity. It promotes responsible and equitable resource management to ensure
+        that future generations can enjoy the same or improved quality of life.
+    </div>
+</body>
+
+</html>

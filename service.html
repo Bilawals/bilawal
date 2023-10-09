@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(60, 88, 88);
+}
+ .nabsection{
+    width: 100%; height: 10vh;  background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+    display: flex; justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60% );
+    padding-left: 100px ;
+    box-sizing: border-box;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagepiche   2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes aagepiche{
+    from{ padding-left: 40px;}
+    to { padding-right: 40px;}
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    font-size: 17px;
+    position: relative;
+}
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #07080a;
+    transition: all 0.4s linear;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+.services{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    background-color: brown;
+}
+.services h1{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 15%;
+} 
+.services p{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 33%;
+}
+.s1{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 15%;
+    background-color: gray;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transition: all 4s linear ease;
+}
+.s1 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+.s1:hover{
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s2{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 15%;
+    background-color: gray;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 45%;
+    left: 72%;
+    transition: all 4s linear ease;
+}
+.s2:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s2 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+.s3{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 15%;
+    background-color: gray;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    transition: all 4s linear ease;
+}
+.s3:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s3 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+.s4{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 15%;
+    background-color: gray;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    transition: all 4s linear ease;
+}
+.s4:hover{
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s4 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+.s5{
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 20px;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: gray;
+    position: absolute;
+    top: 85%;
+    left: 43%;
+    transition: all 4s linear ease;
+}
+.s5:hover{
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s5 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+.s6{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 85%;
+    left: 72%;
+    transition: all 4s linear ease;
+}
+.s6:hover{
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    background-color: darkcyan;
+}
+.s6 h3{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+</style>
+</head>
+
+<body>        
+    <section class="nabsection">
+        <div class="logo">
+            <h1>Thapa technical</h1>
+        </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href= "service.html">services</a>
+        <a href="gallery1.html">gallery</a>
+        <a href="about.html">about</a>
+        <a href="contant.html">contact</a>
+    </nav>
+</section>
+    <div class="services">
+        <h1>Popular WordPress services</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis molestiae <br>asperiores laboriosam
+           accusantium pariatur corrupti aut facilis enim voluptatibus <br>soluta repellendus, quia perferendis, placeat
+        iste earum animi nisi eius at.</p>
+    </div>
+    <a href="part1.html">
+    <div class="s1">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+        <h3>WP website Design</h3>
+    </div>
+    </a>
+    <a href="part2.html">
+    <div class="s2">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+       <h3>Development</h3>
+    </div>
+    </a>
+    <a href="part3.html">
+    <div class="s3">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+        <h3>Social Media</h3>
+    </div>
+    </a>
+    <a href="part4.html">
+    <div class="s4">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+        <h3>Ecommerce</h3>
+    </div>
+    </a>
+    <a href="part5.html">
+    <div class="s5">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+        <h3>Strategy</h3>
+    </div>
+    </a>
+    <a href="part6.html">
+    <div class="s6">
+        <img src="img/png2.webp" alt="" width="100px" height="100px">
+        <h3>Branding</h3>
+    </div>
+    </a>
+</body>
+
+</html>
